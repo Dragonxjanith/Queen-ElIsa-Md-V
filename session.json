@@ -1,0 +1,72 @@
+{
+  "creds": {
+    "noiseKey": {
+      "private": {
+        "type": "Buffer",
+        "data": "oPZo7icFHRYzb0qOIDEATa2BrBWB5lzMW8Z5t1Lw420="
+      },
+      "public": {
+        "type": "Buffer",
+        "data": "oZXwvl0p2LvT2Yxj35gOPaHvFVNLu4c3m9a2inTCzCU="
+      }
+    },
+    "signedIdentityKey": {
+      "private": {
+        "type": "Buffer",
+        "data": "8AnOt2gxiED8QHraA1m8Sgbgx37sjEpi+2S0lhaoy0A="
+      },
+      "public": {
+        "type": "Buffer",
+        "data": "KD1tJbWebs5kWGCyNjqs9UoEegHCIs+SpZX80lzd1Xw="
+      }
+    },
+    "signedPreKey": {
+      "keyPair": {
+        "private": {
+          "type": "Buffer",
+          "data": "mANgDvTkCMULpxjpIeMy+9iWhDODCO/GSA5bu+YFxWE="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "sgxY89anGrakLu+A2enR8m+uCZVNtcvkWIY6ZZZfAi4="
+        }
+      },
+      "signature": {
+        "type": "Buffer",
+        "data": "RN9s2JlKS4GuVOsxBsXNnzXUxtR+/ld027r8iKxr/OxlFzlNJvw9E9cfVTeCEyY+ukUhDM1P36/y+CNnBy1uiw=="
+      },
+      "keyId": 1
+    },
+    "registrationId": 57,
+    "advSecretKey": "kjGnSBRUft4n6XNeykPlzhlX3S8SMQC07O1LLlUE4sg=",
+    "processedHistoryMessages": [],
+    "nextPreKeyId": 1,
+    "firstUnuploadedPreKeyId": 1,
+    "accountSettings": {
+      "unarchiveChats": false
+    },
+    "account": {
+      "details": "CPDGtpwHENXAhaAGGAE=",
+      "accountSignatureKey": "zs5AgHj9/sUWZbGXLzxVqTHsojPgm22B6F5gB0xDHjo=",
+      "accountSignature": "w0wIqtW4Jw47vvqxfPQ7Qo9JkhgSmDBHhbylLNcuYDNRawvZZ1M97BXlI0m21JaQP6cbU+mpoFR/qXlTy0oJAQ==",
+      "deviceSignature": "pSBa1fw3f9kW57bS8NIqGkHG+KtYv/J+Aos2MPyMAxRE6EaFY8CFW7i5typ+C500OM38hEs2LI1d7XYXVth7gg=="
+    },
+    "me": {
+      "id": "94713576951:22@s.whatsapp.net"
+    },
+    "signalIdentities": [
+      {
+        "identifier": {
+          "name": "94713576951:22@s.whatsapp.net",
+          "deviceId": 0
+        },
+        "identifierKey": {
+          "type": "Buffer",
+          "data": "Bc7OQIB4/f7FFmWxly88Vakx7KIz4JttgeheYAdMQx46"
+        }
+      }
+    ],
+    "platform": "android"
+  },
+  "keys": {}
+}
