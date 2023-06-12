@@ -8,7 +8,7 @@ const { default: DarkMakerincConnect, useMultiFileAuthState, DisconnectReason, m
 const pino = require('pino')
 const { Boom } = require('@hapi/boom')
 const fs = require('fs')
-let MAIN_LOGGER = P({ timestamp: () => `,"time":"${new Date().toJSON()}"` });
+let MAIN_LOGGER = pino({ timestamp: () => `,"time":"${new Date().toJSON()}"` });
 const logger = MAIN_LOGGER.child({});
 logger.level = 'silent'
 const yargs = require('yargs/yargs')
