@@ -24,7 +24,7 @@ global.pengguna = 'Dark Maker' // Your name ඔබේ නම
 global.sessionName = process.env.SESSION || 'session'
 global.prefa = ['#','!','/',''] 
 global.sp = '🔵'
-
+global.botnma =''
 
 global.mess = {
     success: process.env.SUCCESS_MSG || '✅ Done!',

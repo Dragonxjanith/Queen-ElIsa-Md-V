@@ -2060,7 +2060,7 @@ case 'mining': case 'mine':{
   
   case 'ehi' :  {
   const buffer = await getBuffer('https://telegra.ph/file/21440bd3801d3f280316e.jpg')
-  const link = 'http://youtube.com/c/MRNIMAOFC'
+  const link = 'http://youtube.com/c/Janithsadanuwan'
   
 await ElisaBotMd.sendMessage(from, { react: { text: `💉`, key: m.key }})
 AGAINTRY = ` ╔══════❨ ❄ ❩══════╗
@@ -2168,7 +2168,7 @@ break
 case 'httpinjector' : {
        
        const load = await ElisaBotMd.sendText(m.chat,'*📤 Uploading...*' )
-       await ElisaBotMd.sendMessage(m.chat, { document: { url: 'https://github.com/DarkMakerofc/UPLOADS/raw/main/APK/HTTP%20Injector%20(SSHProxyV2Ray)%20VPN.apk' }, mimetype: 'application/vnd.android.package-archive', fileName: `HTTP Injector Qᵁᴱᴱᴺ Eᴸᴵˢᴬ (SSHProxyV2Ray) VPN.apk`}, { quoted: m })
+       await ElisaBotMd.sendMessage(m.chat, { document: { url: 'https://github.com/Dragonx/UPLOADS/raw/main/APK/HTTP%20Injector%20(SSHProxyV2Ray)%20VPN.apk' }, mimetype: 'application/vnd.android.package-archive', fileName: `HTTP Injector Qᵁᴱᴱᴺ Eᴸᴵˢᴬ (SSHProxyV2Ray) VPN.apk`}, { quoted: m })
        const app = await ElisaBotMd.sendMessage(m.chat, { delete: load.key })
        await ElisaBotMd.sendMessage(from, { react: { text: `🚀`, key: app.key }})
 }
@@ -8506,7 +8506,7 @@ View List Of Messages With ${prefix}listmsg`)
                                       ElisaBotMd.sendImage(m.chat, data.url, mess.success, m)
                                       })
                                       break
-case 'menu': case 'panel':{
+case 'menu': {
   const anu = await fetchJson ('https://github.com/DarkMakerofc/UPLOADS/raw/main/JSON/elisadetails.json')
   const NIMAMSG = anu.MENU_NOTE
   const start = new Date().getTime()

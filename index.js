@@ -4,8 +4,7 @@
 //════════════════════════════//
 
 require('./settings')
-const { default: DarkMakerincConnect, useSingleFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto } = require("@adiwajshing/baileys")
-const { state, saveState } = useSingleFileAuthState(`./${sessionName}.json`)
+const { default: DarkMakerincConnect, useMultiFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto } = require("@adiwajshing/baileys")
 const pino = require('pino')
 const { Boom } = require('@hapi/boom')
 const fs = require('fs')
@@ -94,6 +93,7 @@ return
 }
 },30 * 1000)
 */
+const { state, saveCreds } = useMultiFileAuthState(`ses`)
 async function startElisaBotMd() {
     const ElisaBotMd = DarkMakerincConnect({
         logger: pino({ level: 'silent' }),
@@ -312,7 +312,7 @@ ElisaBotMd.sendContact = async (jid, kon, quoted = '', opts = {}) => {
 
  })
 
-    ElisaBotMd.ev.on('creds.update', saveState)
+    ElisaBotMd.ev.on('creds.update', saveCreds)
 
     // Add Other
     /** Send Button 5 Image
