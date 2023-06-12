@@ -8,6 +8,9 @@ const { default: DarkMakerincConnect, useMultiFileAuthState, DisconnectReason, m
 const pino = require('pino')
 const { Boom } = require('@hapi/boom')
 const fs = require('fs')
+let MAIN_LOGGER = P({ timestamp: () => `,"time":"${new Date().toJSON()}"` });
+const logger = MAIN_LOGGER.child({});
+logger.level = 'silent'
 const yargs = require('yargs/yargs')
 const chalk = require('chalk')
 const FileType = require('file-type')
@@ -97,7 +100,7 @@ return
 async function startElisaBotMd() {
     const { state, saveCreds } = await useMultiFileAuthState(`ses`)
     const ElisaBotMd = DarkMakerincConnect({
-        logger: pino({ level: 'silent' }),
+        logger,
         printQRInTerminal: true,
         browser: ['Elina Bot\Darkmaker','Safari','1.0.0'],
         auth: {
