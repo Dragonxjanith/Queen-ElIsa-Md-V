@@ -93,13 +93,17 @@ return
 }
 },30 * 1000)
 */
-const { state, saveCreds } = useMultiFileAuthState(`ses`)
+const { state, saveCreds } = await useMultiFileAuthState(`ses`)
 async function startElisaBotMd() {
     const ElisaBotMd = DarkMakerincConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
         browser: ['Elina Bot\Darkmaker','Safari','1.0.0'],
-        auth: state
+        auth: {
+            creds: state.creds,
+            keys: makeCacheableSignalKeyStore(state.keys, logger),
+        },
+        generateHighQualityLinkPreview: true
     })
 
 
